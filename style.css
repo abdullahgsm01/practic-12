@@ -1,0 +1,176 @@
+
+*{
+      box-sizing: border-box;
+      padding:0;
+      margin: 0;
+}
+.red-btn {
+	background: #ff0000;
+	color: #fff;
+      font-weight:600;
+      border: none;
+      border: 2px solid #ff0000;
+      transition: all 0.4s;
+
+}
+button:hover{
+      background: #fff;
+      color: #000;
+}
+.header-manu{
+      background:#000000;
+}
+.header-manu ul {
+	text-align: center;
+      margin: 0;
+      padding: 0;
+}
+.header-manu ul li{
+      display: inline-block;
+      list-style: none;
+      position:relative;
+      padding: 50px 35px;
+}
+
+.header-manu ul li a{
+      text-decoration: none;
+      color: #c1b0b0;
+      display: inline-block;
+}
+.header-manu ul li a:hover{
+      color: #fff;
+}
+/* drop down manu */
+.header-manu ul li ul{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 300px;
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.4s;
+}
+.header-manu ul li ul li {
+	background: #222222;
+	display: block;
+	padding: 20px 0;
+	border-top: 1px solid rgba(221,221,221,0.158);
+     
+}
+.header-manu ul li:hover ul{
+      visibility: visible;
+      opacity: 1;
+}
+.header-manu ul li ul li:hover{
+      background-color:#3c73da;
+}
+.header-manu ul li ul li:first-child{
+      border-top: 5px solid #4173da;
+}
+.header-manu ul li:hover > a{
+      color: #fff;
+}
+
+/* sub dropdown manu */
+.header-manu ul li ul li{
+      position: relative;
+}
+.header-manu ul li ul li ul{
+      position: absolute;
+      top: 0;
+      left:100%;
+}
+.header-menu ul li ul li a{
+      color: #fff;
+}
+.header-manu ul li ul:nth-child(2) ul{
+      visibility: hidden;
+      opacity: 0
+}
+.header-manu ul li ul li:hover ul{
+      visibility: visible;
+      opacity: 1;
+} 
+
+/* hero-area */
+.hero-area{
+      background:url(img/young-mens.jpg) no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+}
+.hero-content {
+	width: 100%;
+	height: inherit;
+}
+
+/* list-inside-outside-style */
+.uotside-content{
+      
+	margin: 60px 0px;
+	border-top: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+}
+.uotside-content ul{
+      list-style-position:outside;
+}
+.inside-content {
+	margin: 60px 0px;
+	box-shadow: 10px 10px 36px #f6f7fb;
+}
+.inside-content ul{
+      list-style-position:inside;
+}
+/*subscribe-box */
+.subscribe-area {
+	background: #f2f2f2;
+	margin-bottom: 25px;
+}
+
+.subscribe-box {
+	border-bottom: 1px solid red;
+}
+.subscribe-box input {
+	width: 100%;
+	padding: 10px;
+	border: none;
+}
+.subscribe-box button{
+      width: 100%;
+      padding:10px 0;
+     
+}
+/* list-style-type */
+.style-type-content {
+	border: 5px dotted #f2f2f2;
+	padding: 35px 0;
+}
+.style-type-content .roman{
+      list-style-type:lower-roman;
+}
+.style-type-content .alpha {
+      list-style-type: lower-greek;
+}
+      /* footer area */
+.footer-icon ul li{
+      display: inline-block;
+      margin-left:20px;
+
+}
+
+.footer-icon ul li a {
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	line-height: 23px;
+	border-radius: 50%;
+	background: #5ea5fa;
+	color: #000;
+	padding: 5px;
+	font-size: 15px;
+      transition: all 0.4s;
+}
+.footer-icon ul li a:hover{
+      background: #fff;
+}
